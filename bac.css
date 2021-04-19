@@ -1,0 +1,408 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+
+.accordeon {
+    margin: 0 auto;
+    max-width: 460px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  .logo{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .item {
+    margin-bottom: 10px;
+  }
+  
+  .item-name {
+    background: #696666;
+    height: 43px;
+    border-radius: 43px;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .item-name--gray {
+    background:  #BBE3FE;
+  }
+  
+  .item-name p {
+    color: #fff;
+    padding-left: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  .item-name--gray p{
+    color: #4f4f4f;
+  }
+  
+  .item-arrow {
+    border: 8px solid transparent;
+    float: right;
+    border-top: 15px solid #ff8663;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  
+  .item-name:hover {
+    cursor: pointer;
+  }
+  
+  .item-wrapper {
+    background: #e7e7e7;
+    padding-top: 43px;
+    position: relative;
+    margin-top: -30px;
+    border-radius: 12px;
+    display: none;
+    transition: all 1s ease;
+  }
+  
+  .item-wrapper ul{
+    margin: 0;
+    padding: 0 25px 12px;
+    position: relative;
+  }
+  
+  .item-wrapper ul li {
+    list-style: none;
+    color: #4f4f4f;
+    font-weight: 300;
+    margin-top: 10px;
+    
+  }
+  
+  .item--open .item-wrapper {
+    display: block;
+  }
+  
+  .item--open .item-name {
+    background: #ff8663;
+  }
+  
+  .item--open .item-arrow {
+    border-top: 15px solid blue;
+    transform: rotate(180deg);
+    position: relative;
+    top: -10px;
+  }
+  .item--open .item-name p {
+    color: blue;
+  }
+  .title{
+    color: #ff8663;
+  }
+  
+ .section_1{
+   background-color:#e7e7e7 ;
+ }
+ .section_2{
+   background-color: #99D5FE;
+ }
+ .presentation{
+   color:#4f4f4f;
+ }
+ .section_2_div{
+   background-color: #2372a9;
+   border: solid 2px #a94710;
+ }
+ .section_2_title{
+   color:#a94710;
+ }
+ #contact{
+   background-color: #BBE3FE;
+   border: solid 2px #ff8663;
+ }
+
+
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
+#animate {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  
+  
+  animation: move 3s ease infinite;
+}
+
+@keyframes move {
+  50% {
+     transform: translate(100px, 100px);
+  }
+}
+
+
+.macbook {
+    background-color: #082746;
+    background-image: linear-gradient(70deg, transparent 67%, hsla(0,0%,100%,.05) 67%, hsla(0,0%,100%,.025)),
+                      linear-gradient(#ddd 11px, transparent 11px),
+                      linear-gradient(#132d4e, #4f7d90);
+    border-radius: 8px 8px 0 0;
+    box-shadow: inset 0 1px 1px 1px #000,
+                inset 0 0 0 9px #111,
+                0 0 0 1px #ccc,
+                0 0 1px 2px hsla(0,0%,0%,.4),
+                0 0 50px hsla(0,0%,0%,.3), 
+    0 0 100px hsla(0,0%,0%,.5), 
+    0 0 200px hsla(0,0%,0%,.5);
+    height: 100px;
+    display: block;
+    left: 50%;
+    margin: -50px -75px;
+    position: absolute;
+    top: 50%;
+    width: 150px;
+}
+.macbook:after {
+    background-color: #ddd;
+    background-image: linear-gradient(left, hsla(0,0%,0%,.3), hsla(0,0%,100%,.4) 2%, hsla(0,0%,100%,.1) 5%, hsla(0,0%,0%,.2) 95%, hsla(0,0%,100%,.2) 98%, hsla(0,0%,0%,.4));
+    border-bottom: 3px solid hsla(0,0%,40%,.75);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 3px 7px hsla(0,0%,0%,.1);
+    content: '';
+    height: 7px;
+    left: -22px;
+    position: absolute;
+    right: -22px;
+    top: 100%;
+}
+.macbook:before {
+    background-color: #222;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 0 hsla(0,0%,100%,.1),
+                -13px 96px 0 -1px #888,
+                -13px 97px 0 -1px #888,
+                -11px 97px 0 #888,
+                -9px 97px 0 #888,
+                -7px 97px 0 #888,
+                -5px 97px 0 #888,
+                -3px 97px 0 #888,
+                -1px 97px 0 #888,
+                1px 97px 0 #888,
+                3px 97px 0 #888,
+                5px 97px 0 #888,
+                7px 97px 0 #888,
+                9px 97px 0 #888,
+                11px 97px 0 #888,
+                13px 97px 0 -1px #888,
+                13px 96px 0 -1px #888,
+                80px 99px 0 -1px #666,
+                81px 99px 0 -1px #666,
+                82px 99px 0 -1px #666,
+                83px 99px 0 -1px #666,
+                84px 99px 0 -1px #666,
+                85px 99px 0 -1px #666;
+    content: '';
+    height: 3px;
+    left: 50%;
+    margin-left: -2px;
+    position: absolute;
+    top: 3px;
+    width: 3px;
+    z-index: 1;
+}​
+
+h1 {
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+a{
+  color:#ff8663;
+}
+
+
+
