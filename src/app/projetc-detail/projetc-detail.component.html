@@ -1,0 +1,29 @@
+<!-- <div class="">close</div> -->
+<div class="text-white main d-flex justify-content-around flex-wrap col-12">
+
+  <div class="d-flex mt-3 col-5 justify-content-center">
+    <img src="{{myProject[0].img}}" alt="">
+
+  </div>
+  
+  <div class="ms-4 me-4 mt-4 col-6">
+    <h4 class="text-center text-warning fw-bold">{{myProject[0].titre|uppercase}}</h4>
+     <p><span class="text-warning"> Année : </span>{{myProject[0].annee}}</p>
+    <p><span class="text-warning"> Contexte : </span>{{myProject[0].contexte}}</p>
+     <p><span class="text-warning"> Technologies utilisées : </span></p> 
+     <p><span class="text-warning"> Maquettage : </span> Adobe XD</p>
+     <p><span class="text-warning"> Back-end : </span>{{myProject[0].backTechno}}</p>
+    <p><span class="text-warning"> Front-end : </span>{{myProject[0].frontTechno}}</p>
+    <p><span class="text-warning"> Base de données : </span>{{myProject[0].bddTechno}}</p>
+    <p><span class="text-warning"> Librairies et modules: </span>{{myProject[0].librairy}}</p>  
+    <p><span class="text-warning"> Hebergement : </span>o2switch</p>  
+    <p><span class="text-warning"> Organisation de travail : </span>GitLab, Trello</p>  
+    <p><span class="text-warning"> IDE : </span>Visual studio code</p>
+    <!-- <a href="https://natura-kid.fr/#/accueil"> -->
+      <button type="button" class="btn btn-outline-warning" (click)="gotToWbsite(url)">Voir le site</button>
+    <!-- </a>   -->
+  
+  </div>
+
+
+</div>

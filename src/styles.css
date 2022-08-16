@@ -1,0 +1,45 @@
+.iconeTerminal{
+    width: 10px;
+}
+.iconeTerminalAvatar{
+    height: 31px;
+    width: 31px;
+}
+.circle{
+    border-radius: 100%;
+}
+.borderBlackTerminal{
+    border: solid 0.5px black;
+}
+.br-8px{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.purpleTerminal{
+color: #A700A7;
+}
+.greenTerminal{
+color: #00B500;
+}
+.yellowTerminal{
+color:#BBB800;
+}
+.lightGreen{
+    color: #317d85;
+}
+.bgBlack{
+    background-color: black;
+}
+.bgWhite{
+    background-color: white;
+}
+
+.border-red{
+    border: red solid 2px;
+}
+.border-none{
+    border: none;
+}
+.c-pointer{
+    cursor: pointer
+}

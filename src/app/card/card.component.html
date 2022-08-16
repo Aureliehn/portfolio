@@ -1,0 +1,170 @@
+<main class="main">
+<h2 class="text-center fw-bold text-warning">{{title}}</h2>
+<p class="text-center mt-2 text-white">Voici un aperçu des projets sur lesquels j'ai pu travailler</p>
+  <section class="card-area d-flex flex-row flex-wrap">
+    <!-- section one -->
+    <section class="d-flex flex-row flex-wrap">
+      <!-- Card: Natura-kid -->
+      <section class="card-section">
+        <div class="card">
+          <div class="flip-card">
+            <div class="flip-card__container">
+              <div class="card-front">
+                <div class="card-front__tp card-front__tp--nk">
+                 
+                </div>
+
+                <div class="card-front__bt justify-content-around d-flex">
+                  <p class="card-front__text-view card-front__text-view--nk">
+                    Natura-kid 
+                  </p>
+                  <p><span class="badge bg-secondary p-1">Projet perso</span></p>
+                </div>
+              </div>
+              <div class="card-back">
+                <video class="video__container" autoplay muted loop>
+                  <source class="video__media" src="assets/videos/Nuages.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="inside-page">
+            <div class="inside-page__container">
+              <h3 class="inside-page__heading inside-page__heading--nk">
+                Projet d'examen
+              </h3>
+              <p class="inside-page__text">
+                Projet présenté pour le titre de développeuse web et web mobile
+              </p>
+              <!-- <a [routerLink]="['/projetc_detail', 1]" class="inside-page__btn inside-page__btn--nk">Voir le projet</a> -->
+              <a class="inside-page__btn inside-page__btn--nk c-pointer" (click)="nkVisible('nk')">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card: Opsready  -->
+      <section class="card-section mt-4">
+        <div class="card">
+          <div class="flip-card">
+            <div class="flip-card__container">
+              <div class="card-front">
+                <div class="card-front__tp card-front__tp--opsready">
+                </div>
+
+                <div class="card-front__bt d-flex justify-content-around">
+                  <p class="card-front__text-view card-front__text-view--opsready">
+                    OPSready
+                  </p>
+                  <p><span class="badge bg-secondary p-1">Entreprise</span></p>
+                </div>
+              </div>
+
+              <div class="card-back">
+                <video class="video__container" autoplay muted loop>
+                  <source class="video__media" src="assets/videos/Sapeur.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="inside-page">
+            <div class="inside-page__container">
+              <h3 class="inside-page__heading inside-page__heading--opsready">
+                Application métier
+              </h3>
+              <p class="inside-page__text">
+                Application au service des pompiers
+              </p>
+              <a class="inside-page__btn inside-page__btn--opsready c-pointer"(click)="opsVisible('ops')">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- section two -->
+    <section class="d-flex flex-row flex-wrap">
+      <!-- Card: Opteam -->
+      <section class="card-section">
+        <div class="card">
+          <div class="flip-card">
+            <div class="flip-card__container">
+              <div class="card-front">
+                <div class="card-front__tp card-front__tp--opteam">
+                </div>
+
+                <div class="card-front__bt d-flex justify-content-around">
+                  <p class="card-front__text-view card-front__text-view--opteam">
+                    OPTeam
+                  </p>
+                  <p><span class="badge bg-secondary p-1">Entreprise</span></p>
+                </div>
+              </div>
+              <div class="card-back">
+                <video class="video__container" autoplay muted loop>
+                  <source class="video__media" src="assets/videos/Sapeur.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="inside-page">
+            <div class="inside-page__container">
+              <h3 class="inside-page__heading inside-page__heading--opteam">
+                Application web
+              </h3>
+              <p class="inside-page__text">
+                Application au service des pompiers
+              </p>
+              <a class="inside-page__btn inside-page__btn--opteam c-pointer" (click)="optVisible('opt')">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card: Referend'AUM -->
+      <section class="card-section mt-4">
+        <div class="card">
+          <div class="flip-card">
+            <div class="flip-card__container">
+              <div class="card-front">
+                <div class="card-front__tp card-front__tp--aum">
+                </div>
+
+                <div class="card-front__bt d-flex justify-content-around">
+                  <p class="card-front__text-view card-front__text-view--aum">
+                    Referend'AUM
+                  </p>
+                  <p><span class="badge bg-secondary p-1">Entreprise</span></p>
+                </div>
+              </div>
+              <div class="card-back">
+                <video class="video__container" autoplay muted loop>
+                  <source class="video__media" src="assets/videos/Bureau.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="inside-page">
+            <div class="inside-page__container">
+              <h3 class="inside-page__heading inside-page__heading--aum">
+                Produit interne
+              </h3>
+              <p class="inside-page__text">
+                Outil à destination des commerciaux
+              </p>
+              <a class="inside-page__btn inside-page__btn--aum c-pointer" (click)="otherVisible('other')">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+</main>
+<app-projetc-detail *ngIf="nkIsVisible" id="nk"></app-projetc-detail>
+<app-opsready-project *ngIf="opsIsVisible" id="ops"></app-opsready-project>
+<app-opteam-project *ngIf="optIsVisible" id="opt"></app-opteam-project>
+<app-other-project *ngIf="otherIsVisible" id="other"></app-other-project>

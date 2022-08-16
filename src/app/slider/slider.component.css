@@ -1,0 +1,11 @@
+.carousel{
+    max-height: 235px;
+    max-width: 230px;
+}
+.border-slider{
+    border: 3px black solid;
+    border-radius: 3px;
+}
+.imgBd{
+    max-width: 100%;
+}

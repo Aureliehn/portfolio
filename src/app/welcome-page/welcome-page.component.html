@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+<div class="mt-2 row flex-wrap parallax-effect">
+  <div class="d-flex justify-content-around flex-wrap" id="bloc1">
+    <div class="col-md-6 mt-5">
+      <app-terminal></app-terminal>
+    </div>
+    <div class="col-md-6 mt-5">
+      <h2 class="text-warning fw-bold">A propos de moi</h2>
+      <h5 class="text-white">Hello,</h5>
+      <p class="text-white">
+        Je suis <span class="text-warning fw-bold"> Aurélie</span> , Développeuse Web & Mobile.</p>
+      <p class="text-white">
+        Après une carrière dans le secteur de la santé j'ai décidé de changer de voie et de me reconvertir professionnellement. L'un des meilleurs choix que j'ai pu faire!</p>
+        <p class="text-white">Après avoir participé au bootcamp de Web Force 3, j'ai pu intégrer<span class="text-warning fw-bold"> AUM BIOSYNC</span> et évoluer comme développeuse full stack.</p>
+        <em class="text-white">Vous pouvez obtenir plus d'informations en utilisant le <span class="text-warning">terminal</span><br>ci contre et/ou en le fermant pour découvrir <span class="text-warning">ma carte</span> (sur la petite croix!) </em>
+        <div class="d-flex text-white justify-content-between mt-3">
+          <div>
+            <h6 class="text-warning text-center">Back-end</h6>
+            <p  class="badge text-bg-light me-1">Python</p>
+            <p  class="badge text-bg-light me-1">FLask</p>
+            <p  class="badge text-bg-light me-1">SqlAlchemy</p>
+            <p  class="badge text-bg-light me-1">Alembic</p>
+          </div>
+          <div>
+            <h6 class="text-warning text-center">Front-end</h6>
+            <p  class="badge text-bg-light me-1">Angular</p>
+            <p  class="badge text-bg-light me-1">JavaScript</p>
+            <p  class="badge text-bg-light me-1">Bootstrap</p>
+          </div>
+          <div>
+            <h6 class="text-warning">Base de données</h6>
+            <p  class="badge text-bg-light me-1">PostgreSQL</p>
+          </div>
+          <div class="me-3">
+            <h6 class="text-warning">Mobile</h6>
+            <p  class="badge text-bg-light me-1">Xamarin</p>
+            <p  class="badge text-bg-light me-1">C#</p>
+          </div>
+        </div>
+<!--  -->
+    </div>
+    <div>
+      <button type="button" class="btn btn-outline-warning" id="cv" (click)="scrollToElement('cv')">Voir le C.V</button>
+    </div>
+
+
+  </div>
+
+</div>
+<app-cv *ngIf="cvIsVisible" id="cv"></app-cv>
+<div class="appCard"style="height:1000px;" id="bloc2">
+  <app-card></app-card>
+</div>
+
+
+

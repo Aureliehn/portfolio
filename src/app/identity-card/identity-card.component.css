@@ -1,0 +1,86 @@
+.container {
+  border: 1px solid green;
+  border-radius: 8px;
+  color: white;
+  max-width: 455px;
+  height: 300px;
+  font-size: 10px;
+  background-color: rgb(11, 11, 165);
+  padding: 0;
+}
+
+.header {
+  max-height: 10px;
+}
+
+.identityPicture {
+  max-width: 120px;
+  height: 180px;
+}
+
+/* couleur auvergne 
+jaune : #ffd300
+vert #02672b
+rouge #ee2436
+identity 
+vert #bdd0ca
+bleu #92a0cc
+*/
+.lineaire-simple {
+  background: linear-gradient(#75d39b, #4197df);
+  font-weight: bold;
+}
+
+.blueColor {
+  color: rgb(11, 11, 165);
+}
+
+span {
+  color: rgb(92, 89, 89);
+  font-weight: bold;
+}
+
+.footer {
+  max-height: 80px;
+  background-color: white;
+  color: black;
+  text-align: center;
+
+}
+
+.p0 {
+  padding: 0;
+}
+
+.pr {
+  position: relative;
+}
+
+.ra {
+  right: 0;
+  font-family: montserrat, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 150px;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.textExtend {
+  text-align: center;
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 22px;
+}
+.m0{
+    margin-bottom: 0;
+}
+.bbr-radius{
+    border-bottom-right-radius: 8px;
+}
+.bbl-radius{
+    border-bottom-left-radius: 8px;
+}
+/*  */
