@@ -15,10 +15,36 @@
             <p >Projet réalisé pour le passage du titre de développeuse web</p>
           <button class="btn btn-outline-warning" (click)="nkVisible('nk')">En savoir plus</button>
           </div>
-          
         </div>
       </a>      
     </li>
+    <!--  -->
+    <li *ngIf="nkIsVisible">
+        <a href="" class="card">
+          <h3 class="text-center fw-bold">Natura-kid</h3> 
+       <div class="text-dark p-1">
+        <p><span class="text-warning fw-bold"> Année : </span>{{myProject[0].annee}}</p>
+        <p><span class="text-warning fw-bold"> Contexte : </span>{{myProject[0].contexte}}</p>
+         <p><span class="text-warning fw-bold"> Maquettage : </span> Adobe XD</p>
+         <p><span class="text-warning fw-bold"> Back-end : </span>{{myProject[0].backTechno}}</p>
+        <p><span class="text-warning fw-bold"> Front-end : </span>{{myProject[0].frontTechno}}</p>
+        <p><span class="text-warning fw-bold"> Base de données : </span>{{myProject[0].bddTechno}}</p>
+        <p><span class="text-warning fw-bold"> Librairies et modules: </span>Open Weather, LeafletJS, JSPDF, LeafletGPX, MailJet, Pytest, pypi</p>  
+        <p><span class="text-warning fw-bold"> Hebergement : </span>o2switch</p>  
+        <p><span class="text-warning fw-bold"> Organisation de travail : </span>GitLab, Trello</p>  
+        <p><span class="text-warning fw-bold"> IDE : </span>Visual studio code</p>     
+       </div> 
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>  
+              <div class="card__header-text">
+                <button class="btn btn-outline-danger" (click)="nkIsVisible = false">Fermer la description</button>
+              </div>          
+            </div>
+          </div>
+        </a>
+      </li>    
+    <!--  -->
     <li>
       <a href="" class="card">
         <img src="assets/img/opsready.png" class="card__image" alt="" />
@@ -38,6 +64,32 @@
         </div>
       </a>
     </li>
+     <!--  -->
+     <li *ngIf="opsIsVisible">
+        <a href="" class="card">
+          <h3 class="text-center fw-bold">Opsready</h3> 
+       <div class="text-dark p-1">
+        <p><span class="text-warning fw-bold"> Année : </span>{{myProject[1].annee}}</p>
+        <p><span class="text-warning fw-bold"> Contexte : </span>{{myProject[1].contexte}}</p>
+        <p><span class="text-warning fw-bold"> Technologie mobile : </span>Xamarin Forms</p>
+         <p><span class="text-warning fw-bold"> Back-end : </span>{{myProject[1].backTechno}}</p>
+        <p><span class="text-warning fw-bold"> Front-end : </span>{{myProject[1].frontTechno}}</p>
+        <p><span class="text-warning fw-bold"> Base de données : </span>{{myProject[1].bddTechno}}</p>
+        <p><span class="text-warning fw-bold"> Méthode de travail: </span>Agile</p>  
+        <p><span class="text-warning fw-bold"> Hebergement : </span>o2switch</p>    
+        <p><span class="text-warning fw-bold"> IDE : </span>Visual studio</p>     
+       </div> 
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>  
+              <div class="card__header-text">
+                <button class="btn btn-outline-danger" (click)="opsIsVisible = false">Fermer la description</button>
+              </div>          
+            </div>
+          </div>
+        </a>
+      </li>    
+    <!--  -->
     <li>
       <a href="" class="card">
         <img src="assets/img/opteam.png" class="card__image" alt="" />
@@ -57,7 +109,32 @@
         </div>
       </a>
     </li>
-    <li>
+      <!--  -->
+      <li *ngIf="optIsVisible">
+        <a href="" class="card">
+          <h3 class="text-center fw-bold">Opteam</h3> 
+       <div class="text-dark p-1">
+        <p><span class="text-warning fw-bold"> Année : </span>{{myProject[2].annee}}</p>
+        <p><span class="text-warning fw-bold"> Contexte : </span>{{myProject[2].contexte}}</p>
+         <p><span class="text-warning fw-bold"> Back-end : </span>{{myProject[2].backTechno}}</p>
+        <p><span class="text-warning fw-bold"> Front-end : </span>{{myProject[2].frontTechno}}</p>
+        <p><span class="text-warning fw-bold"> Base de données : </span>{{myProject[2].bddTechno}}</p>
+
+        <p><span class="text-warning fw-bold"> Organisation de travail : </span>GitLab, méthode Agile</p>  
+        <p><span class="text-warning fw-bold"> IDE : </span>Visual studio code</p>     
+       </div> 
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>  
+              <div class="card__header-text">
+                <button class="btn btn-outline-danger" (click)="optIsVisible = false">Fermer la description</button>
+              </div>          
+            </div>
+          </div>
+        </a>
+      </li>    
+    <!--  -->
+    <li> 
       <a href="" class="card">
         <img src="assets/img/aum.png" class="card__image" alt="" />
         <div class="card__overlay">
@@ -75,9 +152,29 @@
           </div>
         </div>
       </a>
-    </li>    
+    </li>  
+    <!--  -->
+    <li *ngIf="otherIsVisible">
+        <a href="" class="card">
+          <h3 class="text-center fw-bold">Référend'AUM</h3> 
+       <div class="text-dark p-1">
+        <p><span class="text-warning fw-bold"> Année : </span>{{myProject[3].annee}}</p>
+        <p><span class="text-warning fw-bold"> Contexte : </span>{{myProject[3].contexte}}</p>
+         <p><span class="text-warning fw-bold"> Back-end : </span>{{myProject[3].backTechno}}</p>
+        <p><span class="text-warning fw-bold"> Front-end : </span>{{myProject[3].frontTechno}}</p>
+        <p><span class="text-warning fw-bold"> Base de données : </span>{{myProject[3].bddTechno}}</p> 
+        <p><span class="text-warning fw-bold"> Organisation de travail : </span>GitLab, méthode Agile</p>  
+        <p><span class="text-warning fw-bold"> IDE : </span>Visual studio code</p>     
+       </div> 
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>  
+              <div class="card__header-text">
+                <button class="btn btn-outline-danger" (click)="otherIsVisible = false">Fermer la description</button>
+              </div>          
+            </div>
+          </div>
+        </a>
+      </li>    
+    <!--  -->  
   </ul>
-  <app-projetc-detail *ngIf="nkIsVisible" id="nk"></app-projetc-detail>
-<app-opsready-project *ngIf="opsIsVisible" id="ops"></app-opsready-project>
-<app-opteam-project *ngIf="optIsVisible" id="opt"></app-opteam-project>
-<app-other-project *ngIf="otherIsVisible" id="other"></app-other-project>
