@@ -26,3 +26,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
   }
+  @media(max-width:1200px){
+    .appCard{
+        display: none;
+    }
+}
+  @media(min-width:1201px){
+    .appCardMobile{
+        display: none;
+    }
+}

@@ -1,0 +1,83 @@
+<ul class="cards">
+    <li>
+      <a href="" class="card">
+        <img src="assets/img/logoNK.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header ">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+            <img class="card__thumb" src="assets/img/logoNK.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title fw-bold">Natura-kid</h3>            
+              <span class="card__status">projet personnel</span>
+            </div>
+          </div>
+          <div class="card__description">
+            <p >Projet réalisé pour le passage du titre de développeuse web</p>
+          <button class="btn btn-outline-warning" (click)="nkVisible('nk')">En savoir plus</button>
+          </div>
+          
+        </div>
+      </a>      
+    </li>
+    <li>
+      <a href="" class="card">
+        <img src="assets/img/opsready.png" class="card__image" alt="" />
+        <div class="card__overlay">        
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+            <img class="card__thumb" src="assets/img/opsready.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title fw-bold">OPSready</h3>
+              <span class="card__status">Projet d'entreprise</span>
+            </div>
+          </div>
+          <div class="card__description">
+            <p >Application au service des pompiers</p>
+          <button class="btn btn-outline-warning" (click)="opsVisible('ops')">En savoir plus</button>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="card">
+        <img src="assets/img/opteam.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+            <img class="card__thumb" src="assets/img/opteam.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title fw-bold">OPTeam</h3>
+              <span class="card__status">Projet d'entreprise</span>
+            </div>
+          </div>
+          <div class="card__description">
+            <p >Application au service des pompiers</p>
+          <button class="btn btn-outline-warning" (click)="optVisible('opt')">En savoir plus</button>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="card">
+        <img src="assets/img/aum.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+            <img class="card__thumb" src="assets/img/aum.png" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title fw-bold">Référend'AUM</h3>
+              <span class="card__status">Projet d'entreprise</span>
+            </div>          
+          </div>
+          <div class="card__description">
+            <p >Outil à destination des commerciaux</p>
+          <button class="btn btn-outline-warning" (click)="otherVisible('other')">En savoir plus</button>
+          </div>
+        </div>
+      </a>
+    </li>    
+  </ul>
+  <app-projetc-detail *ngIf="nkIsVisible" id="nk"></app-projetc-detail>
+<app-opsready-project *ngIf="opsIsVisible" id="ops"></app-opsready-project>
+<app-opteam-project *ngIf="optIsVisible" id="opt"></app-opteam-project>
+<app-other-project *ngIf="otherIsVisible" id="other"></app-other-project>

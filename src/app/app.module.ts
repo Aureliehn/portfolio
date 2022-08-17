@@ -19,6 +19,7 @@ import { OpsreadyProjectComponent } from './opsready-project/opsready-project.co
 import { OpteamProjectComponent } from './opteam-project/opteam-project.component';
 import { OtherProjectComponent } from './other-project/other-project.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardMobileComponent } from './card-mobile/card-mobile.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FooterComponent } from './footer/footer.component';
     OpsreadyProjectComponent,
     OpteamProjectComponent,
     OtherProjectComponent,
-    FooterComponent
+    FooterComponent,
+    CardMobileComponent
   ],
   imports: [
     BrowserModule,
