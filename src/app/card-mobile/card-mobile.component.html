@@ -3,10 +3,10 @@
       <a href="" class="card">
         <img src="assets/img/logoNK.png" class="card__image" alt="" />
         <div class="card__overlay">
-          <div class="card__header ">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+          <div class="card__header " (click)="nkVisible('nk')">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg" (click)="nkVisible('nk')"><path /></svg>                     
             <img class="card__thumb" src="assets/img/logoNK.png" alt="" />
-            <div class="card__header-text">
+            <div class="card__header-text" (click)="nkVisible('nk')">
               <h3 class="card__title fw-bold">Natura-kid</h3>            
               <span class="card__status">projet personnel</span>
             </div>
@@ -49,9 +49,9 @@
       <a href="" class="card">
         <img src="assets/img/opsready.png" class="card__image" alt="" />
         <div class="card__overlay">        
-          <div class="card__header">
+          <div class="card__header" (click)="opsVisible('ops')">
             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-            <img class="card__thumb" src="assets/img/opsready.png" alt="" />
+            <img class="card__thumb" src="assets/img/opsready.png" alt="" (click)="opsVisible('ops')"/>
             <div class="card__header-text">
               <h3 class="card__title fw-bold">OPSready</h3>
               <span class="card__status">Projet d'entreprise</span>
@@ -94,9 +94,9 @@
       <a href="" class="card">
         <img src="assets/img/opteam.png" class="card__image" alt="" />
         <div class="card__overlay">
-          <div class="card__header">
+          <div class="card__header" (click)="optVisible('opt')">
             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-            <img class="card__thumb" src="assets/img/opteam.png" alt="" />
+            <img class="card__thumb" src="assets/img/opteam.png" alt="" (click)="optVisible('opt')"/>
             <div class="card__header-text">
               <h3 class="card__title fw-bold">OPTeam</h3>
               <span class="card__status">Projet d'entreprise</span>
@@ -138,9 +138,9 @@
       <a href="" class="card">
         <img src="assets/img/aum.png" class="card__image" alt="" />
         <div class="card__overlay">
-          <div class="card__header">
+          <div class="card__header" (click)="otherVisible('other')">
             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-            <img class="card__thumb" src="assets/img/aum.png" alt="" />
+            <img class="card__thumb" src="assets/img/aum.png" alt=""  (click)="otherVisible('other')"/>
             <div class="card__header-text">
               <h3 class="card__title fw-bold">Référend'AUM</h3>
               <span class="card__status">Projet d'entreprise</span>
