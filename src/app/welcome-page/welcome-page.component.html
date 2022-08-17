@@ -40,15 +40,18 @@
 <!--  -->
     </div>
     <div>
-      <button type="button" class="btn btn-outline-warning" id="cv" (click)="scrollToElement('cv')">Voir le C.V</button>
+      <button type="button" class="btn btn-outline-warning" id="blocCV" (click)="scrollToElement('blocCV')">Voir le C.V</button>
     </div>
 
 
   </div>
 
 </div>
-<app-cv *ngIf="cvIsVisible" id="cv"></app-cv>
+<div *ngIf="cvIsVisible" id="blocCV">
+  <app-cv *ngIf="cvIsVisible" id="cv"></app-cv>
 <app-cv-mobile *ngIf="cvIsVisible" id="cvMobile"></app-cv-mobile>
+</div>
+
 <div class="appCard"style="height:1000px;" id="bloc2">
   <app-card></app-card>
 </div>
