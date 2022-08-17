@@ -36,3 +36,13 @@ body{
         display: none;
     }
 }
+@media(max-width:1131px){
+    #cv{
+        display: none;
+    }
+}
+@media(min-width:1131px){
+    #cvMobile{
+        display: none;
+    }
+}

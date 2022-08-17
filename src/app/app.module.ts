@@ -20,6 +20,7 @@ import { OpteamProjectComponent } from './opteam-project/opteam-project.componen
 import { OtherProjectComponent } from './other-project/other-project.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardMobileComponent } from './card-mobile/card-mobile.component';
+import { CvMobileComponent } from './cv-mobile/cv-mobile.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CardMobileComponent } from './card-mobile/card-mobile.component';
     OpteamProjectComponent,
     OtherProjectComponent,
     FooterComponent,
-    CardMobileComponent
+    CardMobileComponent,
+    CvMobileComponent
   ],
   imports: [
     BrowserModule,
