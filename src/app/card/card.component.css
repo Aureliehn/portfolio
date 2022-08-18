@@ -100,20 +100,7 @@ body {
   transform: scaleY(1);
 }
 
-/* Layout Structure=========================================*/
 
-.main {
-  background: linear-gradient(
-    to bottom right,
-    #a78db5,
-    rgba(0,0,0,0.3)
-  );
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-}
 
 /* Container to hold all cards in one place */
 .card-area {
@@ -137,6 +124,7 @@ body {
 
 /* A container to hold the flip card and the inside page */
 .card {
+  box-shadow: 0px 5px 5px black;
   background-color: rgba(0,0,0, .05);
   height: 15rem;
   position: relative;
@@ -290,6 +278,45 @@ body {
 }
 
 
+/*  */
+.conteneur {
+  background: linear-gradient(
+    to bottom right,
+    #a78db5,
+    rgba(0,0,0,0.3)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 10%;
+  padding-top: 10%; */
+}
+
+.box {
+  flex: 1;
+}
+
+.box:nth-child(2) {
+  align-self: center;
+}
+
+.box:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box:nth-child(4) {
+  align-self: center;
+}
 
 
-
+.mx-w{
+  max-width: 50%;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 2%;
+}
