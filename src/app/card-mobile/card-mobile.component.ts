@@ -22,7 +22,8 @@ export class CardMobileComponent implements OnInit {
   public otherIsVisible: boolean = false
   public idProject : string = ""
   constructor() { }
-  public url:string='https://natura-kid.fr/#/accueil'
+  public urlNK:string='https://natura-kid.fr/#/accueil'
+  public urlAUM:string='https://www.aumbiosync.com/fr/'
   public myProject:project[] = [
     {identifiant: 1, titre:'Natura-kid', img:'assets/img/Capture.png', contexte:'Projet personnel réalisé en dehors de mes horaires de travail pour le passage du titre de developpeuse web. J\'ai entièrement réalisé le projet, du cahier des charges en passant par la maquette, le développement jusqu\'à la mise en production', annee: 2022, backTechno:'Flask, sqlAlchemy, Marshmallow, Alembic', frontTechno:'Angular, Bootstap', bddTechno:'PostgreSql', librairy:'Open Weather, LeafletJS, JSPDF, LeafletGPX, MailJet, Pytest, pypi'},
     {identifiant: 2, titre:'Opsready', img:'', contexte:'Application métier à destination des pompiers, comprenant une application web correspondant au back-office admin et une application mobile pour les utilisateurs. S\'agissant de l\'application Xamarin j\ai essentiellement travaillé sur des améliorations continues. Pour la partie application Web j\ai travaillé sur de nouvelles features.', annee: 2022, backTechno:'Flask, sqlAlchemy, Marshmallow, Alembic', frontTechno:'Angular, Bootstap', bddTechno:'MariaDB', librairy:''},
@@ -66,5 +67,7 @@ export class CardMobileComponent implements OnInit {
   scrollToElement(element: any): void {
     (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
-
+  public gotToWbsite(url: string){
+    window.open(url, "_blank")
+  }
 }

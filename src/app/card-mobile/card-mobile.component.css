@@ -28,6 +28,7 @@
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
+    background-color: #0d1a2d;
   }
   
   .card__image {      
@@ -118,3 +119,6 @@
     overflow: hidden;
     background-color: #0d1a2d;
   }    
+  .fs{
+    font-size: 10px;
+  }
